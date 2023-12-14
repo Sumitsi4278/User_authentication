@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/signup.css">
+    <title>Signup</title>
+</head>
+<body>
+    <!-- <h2>Signup Page</h2>
+
+    <form action="/signup" method="post">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" placeholder="username">
+        
+        <br> <br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="email">
+        
+        <br> <br>
+        
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="password">
+
+        <br> <br>
+
+        <button>Signup</button> <button><a href="/signin">Signin</a></button>
+    </form> -->
+    <div class="form-box">
+        <form class="form" action="/signup" method="post">
+            <span class="title">Sign up</span>
+            <span class="subtitle">Create a free account with your email.</span>
+            <div class="form-container">
+              <input type="text" class="input" name="username" placeholder="Full Name">
+                    <input type="email" class="input" name="email" placeholder="Email">
+                    <input type="password" class="input" name="password" placeholder="Password">
+            </div>
+            <button>Sign up</button>
+        </form>
+        <div class="form-section">
+          <p>Have an account? <a href="/signin">Log in</a> </p>
+        </div>
+    </div>
+    <div id="mode">
+        <button>
+            <img class="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq2CJXZjVg9H5yU2LTKkt1qNbTGwQoh47mdw&usqp=CAU" >
+        </button>
+       </div>
+
+    <script>
+        const toggleTheme = document.getElementById('mode')
+
+        toggleTheme.addEventListener('click', ()=>{
+            document.body.classList.toggle('dark-mode');
+        })
+    </script>
+</body>
+</html>
